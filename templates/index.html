@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+    <title>Title</title>
+</head>
+<body>
+<form method="GET" action="{{url_for('recs')}}">
+    <div class="group">
+        <input type="text" placeholder="Введите ИНН" name="inn" style="text-align: center" required>
+        <span class="bar"></span>
+        <div class="wp" style="display: flex; justify-content: center">
+            <button class="send_button" type="submit">Отправить</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>
